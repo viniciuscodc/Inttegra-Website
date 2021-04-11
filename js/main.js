@@ -18,21 +18,17 @@ function backgroundeffect() {
   });
 }
 
-function createGrid(){
+function createGrid() {
   const teamMembers = 22;
   let getTeam = document.querySelector(".team");
   for (let i = 0; i < teamMembers; i++) {
     let newDiv = document.createElement("div");
     getTeam.appendChild(newDiv);
-    newDiv.setAttribute("class","team-grid-img"+(i+1));
-    newDiv.style.gridArea = "team-img"+(i+1);
-    newDiv.style.backgroundImage = "url(../images/team" + (i+1) + ".jpg)";
-
+    newDiv.setAttribute("class", "team-grid-img" + (i + 1));
+    newDiv.style.gridArea = "team-img" + (i + 1);
+    newDiv.style.backgroundImage = "url(../images/team" + (i + 1) + ".jpg)";
   }
 }
-
-
-
 
 backgroundeffect();
 createGrid();
