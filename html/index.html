@@ -13,6 +13,18 @@
     <title>Inttegra EJ</title>
   </head>
   <body>
+
+    <section class="navbar">
+      <nav>
+        <div>
+        <img src="../images/InttegraLogo.png" alt="logo">
+      </div>
+        <ul>
+          <li></li>
+        </ul>
+      </nav>
+    </section>
+
     <section class="cover">
       <div class="img-wrapper">
         <img src="../images/capa.jpg" alt="capa" />
@@ -99,14 +111,12 @@
       </div>
     </section>
 
-   
-
     <section class="portfolio">
       <header class="default-header">
         <h1>Portfolio</h1>
       </header>
       <div class="text-wrapper">
-        <div class="arrow">
+        <div class="arrow" onclick="portPrev()">
           <img src="../images/arrow_back_ios_black_24dp.svg">
           </div>
       <div class="text-container">
@@ -116,14 +126,13 @@
           excelência e profissionalismo.</p>
       </div>
       <div class="img-container">
-        <img src="../images/port1.jpg">
+        <img id="port-img" src="../images/port1.jpg">
       </div>
-      <div class="arrow">
+      <div class="arrow" onclick="portNext()">
       <img src="../images/arrow_forward_ios_black_24dp.svg">
       </div>
       </div>
-
-      
+    
     </section>
     <section class="projetos">
       <header>

@@ -30,5 +30,25 @@ function createGrid() {
   }
 }
 
+function portNext() {
+  let getImgSrc = document.getElementById("port-img").src;
+  let getImgUrl = getImgSrc.split("/port");
+  let getImgNumber = getImgUrl[1].split(".jpg");
+  if (parseInt(getImgNumber[0]) !== 5) {
+    let newNumber = parseInt(getImgNumber[0]) + 1;
+    document.getElementById("port-img").src = "../images/port" + newNumber + ".jpg";
+  }
+}
+
+function portPrev() {
+  let getImgSrc = document.getElementById("port-img").src;
+  let getImgUrl = getImgSrc.split("/port");
+  let getImgNumber = getImgUrl[1].split(".jpg");
+  if (parseInt(getImgNumber[0]) !== 1) {
+    let newNumber = parseInt(getImgNumber[0]) - 1;
+    document.getElementById("port-img").src = "../images/port" + newNumber + ".jpg";
+  }
+}
+
 backgroundeffect();
 createGrid();
