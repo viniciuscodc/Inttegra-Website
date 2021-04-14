@@ -35,8 +35,14 @@ function portNext() {
   let getImgUrl = getImgSrc.split("/port");
   let getImgNumber = getImgUrl[1].split(".jpg");
   if (parseInt(getImgNumber[0]) !== 5) {
+    document.getElementById("port-text" + getImgNumber[0]).style.display = "none";
+    document.getElementById("port-header" + getImgNumber[0]).style.display = "none";
+    document.getElementById("ball" + getImgNumber[0]).style.backgroundColor = "#686868";
     let newNumber = parseInt(getImgNumber[0]) + 1;
+    document.getElementById("port-text" + newNumber).style.display = "block";
+    document.getElementById("port-header" + newNumber).style.display = "block";
     document.getElementById("port-img").src = "../images/port" + newNumber + ".jpg";
+    document.getElementById("ball" + newNumber).style.backgroundColor = "#b31217";
   }
 }
 
@@ -45,10 +51,26 @@ function portPrev() {
   let getImgUrl = getImgSrc.split("/port");
   let getImgNumber = getImgUrl[1].split(".jpg");
   if (parseInt(getImgNumber[0]) !== 1) {
+    document.getElementById("port-text" + getImgNumber[0]).style.display = "none";
+    document.getElementById("port-header" + getImgNumber[0]).style.display = "none";
+    document.getElementById("ball" + getImgNumber[0]).style.backgroundColor = "#686868";
     let newNumber = parseInt(getImgNumber[0]) - 1;
+    document.getElementById("port-text" + newNumber).style.display = "block";
+    document.getElementById("port-header" + newNumber).style.display = "block";
+    document.getElementById("ball" + newNumber).style.backgroundColor = "#b31217";
     document.getElementById("port-img").src = "../images/port" + newNumber + ".jpg";
   }
 }
 
+function hideElements() {
+  let portfolioNumber = 5;
+  for (let i = 2; i < (portfolioNumber+1); i++) {
+    document.getElementById("port-text" + i).style.display = "none";
+    document.getElementById("port-header" + i).style.display = "none";
+    document.getElementById("ball" + i).style.backgroundColor = "#686868";
+  }
+}
+
+hideElements();
 backgroundeffect();
 createGrid();

@@ -20,12 +20,15 @@
         <img src="../images/InttegraLogo.png" alt="logo">
       </div>
         <ul>
-          <li></li>
+          <li><a href="#cover">Home</a></li>
+          <li><a href="#quemSomos">Quem Somos</a></li>
+          <li><a href="#serviços">Carta de Serviços</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
         </ul>
       </nav>
     </section>
 
-    <section class="cover">
+    <section class="cover" id="cover">
       <div class="img-wrapper">
         <img src="../images/capa.jpg" alt="capa" />
       </div>
@@ -39,7 +42,7 @@
       </div>
     </section>
 
-    <section class="quemSomos">
+    <section class="quemSomos" id="quemSomos">
       <header class="default-header">
         <h1>Quem Somos</h1>
       </header>
@@ -62,7 +65,7 @@
       </div>
     </section>
 
-    <section class="serviços">
+    <section class="serviços" id="serviços">
       <header class="default-header">
         <h1>Carta de serviços</h1>
       </header>
@@ -111,22 +114,46 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <header class="default-header">
-        <h1>Portfolio</h1>
+        <h1>Portfólio</h1>
       </header>
       <div class="text-wrapper">
         <div class="arrow" onclick="portPrev()">
           <img src="../images/arrow_back_ios_black_24dp.svg">
           </div>
       <div class="text-container">
-        <p> Fundada em setembro de 2016 como primeira Empresa Júnior da Pontifícia Universidade Católica do
-          Paraná (PUCPR), a Inttegra, associação sem fins lucrativos, é composta por alunos de graduação em
-          Engenharia Civil que desenvolvem serviços de qualidade e inovação visando empreender com
-          excelência e profissionalismo.</p>
+        <h2 id="port-header1">Monitoramento</h2>
+        <h2 id="port-header2">Pet Shop</h2>
+        <h2 id="port-header3">Creche Vila torres</h2>
+        <h2 id="port-header4">Orçamento Quantitativo</h2>
+        <h2 id="port-header5">Ensaios de solo</h2>
+        <p id="port-text1">Monitoramento do recalque sofrido na estrutura do edifício New Town durante sua construção, com medições periódicas e relatórios trimestrais.
+          Ao realizar um projeto deste porte, percebe-se a importância de bons projetos de fundação e estruturais, para que não precise-se realizar reparos durante ou no pós-obra.
+      Finalizou-se o projeto atestando que a estrutura sofreu um recalque normal e que não afetaria a estrutura ou a estética do edifício.</p>
+        <p id="port-text2">   Projeto de construção do UAU Pet Shop na Garagem do Shopping Jardim das Américas em Curitiba/PR.
+          Se tratando de um projeto de implantação, observou-se mais facilidade em elaborar os projetos complementares, entretanto nosso maior desafio foi compatibilizar nossos projetos com as normas exigidas pelo shopping.
+          Mesmo com todos os desafios, a obra foi um sucesso e ficamos extremamente satisfeitos em obter um cliente promotor em nosso primeiro projeto dentro de um Shopping Center.</p>
+        <p id="port-text3">  Projeto pró-bono de reforma de uma creche em alvenaria localizada na Vila Torres, em Curitiba/PR, realizado em parceria com a organização "Engenheiros sem fronteiras".
+          A creche faz serviço à uma média de 30 crianças por turno e se encontrava em condições precárias e que afetavam a segurança e bem-estar destas.
+          O projeto foi um desafio principalmente pela condição existente e a necessidade de manter o orçamento o mais baixo possível, por ser necessária a doação de materiais de construção.</p>
+        <p id="port-text4">Ensaios foram realizados nos laboratórios de geotecnia da PUCPR localizada em Curitiba-PR.
+            Os projetos e o memorial descritivo foram estudados e com base na localização e tabela SINAPI o orçamento foi realizado com sucesso, </p>
+        <p id="port-text5">Os ensaios foram realizados nos laboratórios de geotecnia da PUCPR localizada em Curitiba-PR.
+          Foram obtidos os solos do local de obra, e preparadas amostras a partir do peneiramento e da secagem do solo. A equipe foi capaz de realizar todos os ensaios em apenas 3 semanas graças ao trabalho e afinidade entre a equipe, 
+           O principal desafio do trabalho em questão, foi a qualidade do solo em estudo e seu manuseio.</p>
       </div>
       <div class="img-container">
         <img id="port-img" src="../images/port1.jpg">
+        <div>
+          <ul>
+            <div id="ball1"></div>
+            <div id="ball2"></div>
+            <div id="ball3"></div>
+            <div id="ball4"></div>
+            <div id="ball5"></div>
+          </ul>
+        </div>
       </div>
       <div class="arrow" onclick="portNext()">
       <img src="../images/arrow_forward_ios_black_24dp.svg">
@@ -134,7 +161,8 @@
       </div>
     
     </section>
-    <section class="projetos">
+
+    <section class="projetos" >
       <header>
             <div>
               <p>+15</p>
@@ -150,6 +178,11 @@
             </div>
         </ul>
       </section>
+      
+    <section class="contato">
+
+    </section>
+
     <footer> 
     </footer>
   </body>
