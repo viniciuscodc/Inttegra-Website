@@ -26,7 +26,7 @@ function createGrid() {
     getTeam.appendChild(newDiv);
     newDiv.setAttribute("class", "team-grid-img" + (i + 1));
     newDiv.style.gridArea = "team-img" + (i + 1);
-    newDiv.style.backgroundImage = "url(../images/team" + (i + 1) + ".jpg)";
+    newDiv.style.backgroundImage = "url(images/team" + (i + 1) + ".jpg)";
   }
 }
 
@@ -41,7 +41,7 @@ function portNext() {
     let newNumber = parseInt(getImgNumber[0]) + 1;
     document.getElementById("port-text" + newNumber).style.display = "block";
     document.getElementById("port-header" + newNumber).style.display = "block";
-    document.getElementById("port-img").src = "../images/port" + newNumber + ".jpg";
+    document.getElementById("port-img").src = "images/port" + newNumber + ".jpg";
     document.getElementById("ball" + newNumber).style.backgroundColor = "#b31217";
   }
 }
@@ -58,7 +58,7 @@ function portPrev() {
     document.getElementById("port-text" + newNumber).style.display = "block";
     document.getElementById("port-header" + newNumber).style.display = "block";
     document.getElementById("ball" + newNumber).style.backgroundColor = "#b31217";
-    document.getElementById("port-img").src = "../images/port" + newNumber + ".jpg";
+    document.getElementById("port-img").src = "images/port" + newNumber + ".jpg";
   }
 }
 
