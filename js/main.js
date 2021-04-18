@@ -64,7 +64,7 @@ function portPrev() {
 
 function hideElements() {
   let portfolioNumber = 5;
-  for (let i = 2; i < (portfolioNumber+1); i++) {
+  for (let i = 2; i < portfolioNumber + 1; i++) {
     document.getElementById("port-text" + i).style.display = "none";
     document.getElementById("port-header" + i).style.display = "none";
     document.getElementById("ball" + i).style.backgroundColor = "#686868";

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -6,8 +8,17 @@ html {
   scroll-margin-top: 4rem;
 }
 
+:root {
+  --light-grey: #686868;
+  --grey: #4f4f4f;
+  --light-red: hsl(2, 79%, 53%);
+  --red: hsl(358, 82%, 39%);
+  --dark-theme: hsl(219, 18%, 15%);
+}
+
 body {
   font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .navbar {
@@ -17,7 +28,7 @@ body {
   align-items: center;
   justify-content: center;
   position: fixed;
-  background-color: #fff;
+  background-color: hsl(0, 0%, 100%);
   z-index: 200;
 }
 
@@ -52,7 +63,7 @@ body {
 }
 
 .navbar nav ul li a:hover {
-  color: #b31217;
+  color: var(--red);
 }
 
 .cover {
@@ -65,7 +76,7 @@ body {
 .cover .img-wrapper {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: hsla(0, 0%, 0%, 0.8);
 }
 
 .cover .img-wrapper img {
@@ -96,17 +107,18 @@ body {
 .cover .banner h1 {
   color: #fff;
   font-size: 3.5rem;
-  text-shadow: 0.3rem 0.4rem 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 0.3rem 0.4rem 2px hsla(0, 0%, 0%, 0.4);
   margin-bottom: 2rem;
   line-height: 4.2rem;
   animation: moveRotate 1s 0.5s forwards;
   opacity: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .cover .banner p {
   color: #fff;
   font-size: 2rem;
-  text-shadow: 0.2rem 0.2rem 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 0.2rem 0.2rem 2px hsla(0, 0%, 0%, 0.4);
   margin-bottom: 2rem;
   animation: moveRotate 1s 0.7s forwards;
   opacity: 0;
@@ -137,12 +149,25 @@ body {
   }
 }
 
+.default-header {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.default-header h1 {
+  color: var(--light-grey);
+  font-size: 3rem;
+  border-bottom: solid 3px var(--light-red);
+  padding-bottom: 1.5rem;
+}
+
 .quemSomos .text-wrapper {
   display: flex;
   padding-bottom: 4.5rem;
 }
 
-.team {
+.quemSomos .team {
   padding-left: 0.5rem;
   padding-top: 3.5rem;
   display: grid;
@@ -157,7 +182,7 @@ body {
   width: 45%;
 }
 
-.team div {
+.quemSomos .team div {
   width: auto;
   height: 6rem;
   background-repeat: no-repeat;
@@ -174,7 +199,7 @@ body {
 
 .quemSomos .text-wrapper .text-container p {
   font-size: 1.3rem;
-  color: #4e4e4e;
+  color: var(--grey);
   line-height: 1.8rem;
 }
 
@@ -183,23 +208,14 @@ body {
 }
 
 .serviços {
-  background: #1f242d;
+  background: var(--dark-theme);
 }
 
-.default-header {
-  display: flex;
-  justify-content: center;
-  padding-top: 2rem;
+.serviços h1 {
+  color: #fff;
 }
 
-.default-header h1 {
-  color: #686868;
-  font-size: 3rem;
-  border-bottom: solid 3px #e52d27;
-  padding-bottom: 1.5rem;
-}
-
-.grid-wrapper {
+.serviços .grid-wrapper {
   padding-top: 5.5rem;
   margin: 0 auto;
   width: 95%;
@@ -220,7 +236,7 @@ body {
   border-radius: 5px;
 }
 
-#serv-grid-img {
+.serviços #serv-grid-img {
   position: relative;
   overflow: hidden;
 }
@@ -245,12 +261,12 @@ body {
   grid-area: serv-img4;
 }
 
-.background-effect {
-  background-color: #000;
+.serviços .background-effect {
+  background-color: hsl(0, 0%, 0%);
   opacity: 0;
 }
 
-.grid-wrapper .card-text {
+.serviços .grid-wrapper .card-text {
   margin-left: 0.5rem;
   height: auto;
   position: absolute;
@@ -260,7 +276,7 @@ body {
 }
 
 .card-text h1 {
-  color: #e52d27;
+  color: var(--light-red);
   font-weight: 900;
   font-size: 1.5rem;
   padding-bottom: 0.7rem;
@@ -315,9 +331,9 @@ body {
 }
 
 .projetos header {
-  height: 150px;
+  height: 110px;
   width: 100%;
-  background: #b31217;
+  background: var(--red);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -362,7 +378,7 @@ body {
 .portfolio .text-wrapper .text-container h2 {
   color: #686868;
   font-size: 1.7rem;
-  border-bottom: solid 3px #e52d27;
+  border-bottom: solid 3px var(--light-red);
   padding-bottom: 1.5rem;
   font-weight: 600;
 }
@@ -370,7 +386,7 @@ body {
 .portfolio .text-wrapper .text-container p {
   padding-top: 2rem;
   font-size: 1.3rem;
-  color: #4e4e4e;
+  color: var(--grey);
   line-height: 1.8rem;
   height: 20rem;
 }
@@ -388,7 +404,7 @@ body {
   height: 400px;
 }
 
-.portfolio .text-wrapper .img-container ul{
+.portfolio .text-wrapper .img-container ul {
   display: flex;
   justify-content: center;
 }
@@ -404,16 +420,15 @@ body {
   gap: 0.7rem;
 }
 
-.portfolio .text-wrapper .img-container div div{
+.portfolio .text-wrapper .img-container div div {
   margin-top: 1rem;
-  background-color: #b31217;
+  background-color: var(--light-red);
   width: 10px;
   height: 10px;
   border-radius: 50%;
 }
 
-
-.arrow {
+.portfolio .text-wrapper .arrow {
   display: flex;
   align-items: center;
   padding: 0 1.5rem;
@@ -423,13 +438,117 @@ body {
   cursor: pointer;
 }
 
-#port-text1 {
+.portfolio .text-wrapper #port-text1 {
   display: block;
 }
-#port-header1 {
+.portfolio .text-wrapper #port-header1 {
   display: block;
 }
-#ball-1 {
+.portfolio .text-wrapper #ball-1 {
   background-color: #b31217;
 }
 
+.contato {
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.contato .contato-container {
+  margin: 0 auto;
+  max-width: 400px;
+}
+.contato .localização {
+  margin: 0 auto;
+}
+.contato .localização .img-wrapper {
+  padding-top: 2rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contato .localização .img-wrapper img {
+  max-width: 400px;
+}
+
+.contato .contato-container .icons {
+  display: grid;
+  padding-top: 2rem;
+  font-size: 2.5rem;
+  row-gap: 2rem;
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: auto;
+}
+
+.icons div h2 {
+  padding-top: 0.3rem;
+  font-size: 1.8rem;
+}
+
+.icons div p {
+  padding-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: var(--dark-theme);
+  display: flex;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+footer .footer-container {
+  display: flex;
+  margin: 1.2rem 8rem;
+  width: 100%;
+  gap: 2.2rem;
+}
+
+footer h2 {
+  padding-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+footer .footer-container .footer-contato p {
+  line-height: 1.3rem;
+}
+
+footer .footer-container .menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+footer .footer-container .menu ul a{
+  text-decoration: none;
+  color: inherit;
+}
+
+footer .footer-container .menu ul a:hover{
+  color: var(--red);
+}
+
+footer .footer-container .follow {
+  margin-left: auto;
+}
+
+footer .footer-container .follow .icon-container {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.6rem;
+  padding: 0.5rem 0;
+}
+
+footer .footer-container .follow .icon-container a:hover {
+  color: var(--red);
+}
+
+footer .footer-container .follow a {
+  color: inherit;
+}
+
+footer .footer-container .follow p {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
