@@ -1,2 +1,2 @@
 # Inttegra-Website
-Website link: https://viniciuscodc.github.io/Inttegra-Website/#contato
+Website link: https://viniciuscodc.github.io/Inttegra-Website/
